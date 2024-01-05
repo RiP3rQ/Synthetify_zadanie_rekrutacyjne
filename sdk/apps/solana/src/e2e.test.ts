@@ -28,6 +28,7 @@ describe('Base Client tests', () => {
     const info = await client.getInfo(app.sessionId)
     expect(info).toBeDefined()
     assert(info.appMetadata.additionalInfo === TEST_APP_INITIALIZE.appMetadata.additionalInfo)
+    assert(info.appMetadata.footerContent === TEST_APP_INITIALIZE.appMetadata.footerContent)
     assert(info.appMetadata.description === TEST_APP_INITIALIZE.appMetadata.description)
     assert(info.appMetadata.icon === TEST_APP_INITIALIZE.appMetadata.icon)
     assert(info.appMetadata.name === TEST_APP_INITIALIZE.appMetadata.name)

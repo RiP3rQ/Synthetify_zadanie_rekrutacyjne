@@ -4,6 +4,7 @@ import { TEST_RELAY_ENDPOINT } from '../../../commonTestUtils'
 export const TEST_APP_INITIALIZE: AppSolanaInitialize = {
   appMetadata: {
     additionalInfo: 'test-solana-additional-info',
+    footerContent: 'test-solana-footer-content',
     description: 'test-solana-app-description',
     icon: 'test-solana-app-icon',
     name: 'test-solana-app-name'

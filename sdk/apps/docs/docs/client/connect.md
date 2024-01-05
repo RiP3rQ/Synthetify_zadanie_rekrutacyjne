@@ -24,6 +24,7 @@ export interface AppMetadata {
   description?: string;
   icon?: string;
   additionalInfo?: string;
+  footerContent?: string;
 }
 
 interface GetInfoResponse {

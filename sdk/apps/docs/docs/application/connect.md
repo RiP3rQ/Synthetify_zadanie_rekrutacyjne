@@ -37,6 +37,7 @@ interface AppMetadata {
   description?: string;
   icon?: string; // Url of app image
   additionalInfo?: string;
+  footerContent?: string;
 }
 ```
 
@@ -95,7 +96,8 @@ const Context: FC<{ children: ReactNode }> = ({ children }) => {
             name: 'SolanaAdapter',
             description: 'Solana Adapter Test',
             icon: 'https://docs.nightly.app/img/logo.png',
-            additionalInfo: 'Courtesy of Nightly Connect team'
+            additionalInfo: 'Courtesy of Nightly Connect team',
+            footerContent: `By connecting, you agree to Common's Terms of Service and to its Privacy Policy`
           }
         },
         true
@@ -147,7 +149,8 @@ export const SuiProvider = ({ children }: any) => {
               name: 'NCTestSui',
               description: 'Nightly Connect Test',
               icon: 'https://docs.nightly.app/img/logo.png',
-              additionalInfo: 'Courtesy of Nightly Connect team'
+              additionalInfo: 'Courtesy of Nightly Connect team',
+              footerContent: `By connecting, you agree to Common's Terms of Service and to its Privacy Policy`
             }
           },
           true
@@ -183,7 +186,8 @@ const adapter = await NightlyConnectAdapter.build(
       name: 'NC TEST AlephZero',
       description: 'Nightly Connect Test',
       icon: 'https://docs.nightly.app/img/logo.png',
-      additionalInfo: 'Courtesy of Nightly Connect team'
+      additionalInfo: 'Courtesy of Nightly Connect team',
+      footerContent: `By connecting, you agree to Common's Terms of Service and to its Privacy Policy`
     },
     network: 'AlephZero'
   },

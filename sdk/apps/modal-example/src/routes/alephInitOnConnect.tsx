@@ -19,7 +19,8 @@ export default function Polkadot() {
           name: 'NC TEST AlephZero',
           description: 'Nightly Connect Test',
           icon: 'https://docs.nightly.app/img/logo.png',
-          additionalInfo: 'Courtesy of Nightly Connect team'
+          additionalInfo: 'Courtesy of Nightly Connect team',
+          footerContent: `By connecting, you agree to Common's Terms of Service and to its Privacy Policy`
         },
         network: 'AlephZero'
       },

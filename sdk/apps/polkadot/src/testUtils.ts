@@ -4,6 +4,7 @@ import { TEST_RELAY_ENDPOINT } from '../../../commonTestUtils'
 export const TEST_APP_INITIALIZE: AppPolkadotInitialize = {
   appMetadata: {
     additionalInfo: 'test-polkadot-additional-info',
+    footerContent: 'test-polkadot-footer-content',
     description: 'test-polkadot-app-description',
     icon: 'test-polkadot-app-icon',
     name: 'test-polkadot-app-name'

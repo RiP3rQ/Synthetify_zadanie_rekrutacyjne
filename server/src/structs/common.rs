@@ -80,6 +80,9 @@ pub struct AppMetadata {
     #[serde(rename = "additionalInfo")]
     #[ts(optional)]
     pub additional_info: Option<String>,
+    #[serde(rename = "footerContent")]
+    #[ts(optional)]
+    pub footer_content: Option<String>,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash, Serialize, Deserialize, TS)]

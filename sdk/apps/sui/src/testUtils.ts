@@ -4,6 +4,7 @@ import { TEST_RELAY_ENDPOINT } from '../../../commonTestUtils'
 export const TEST_APP_INITIALIZE: AppSuiInitialize = {
   appMetadata: {
     additionalInfo: 'test-sui-additional-info',
+    footerContent: 'test-sui-footer-content',
     description: 'test-sui-app-description',
     icon: 'test-sui-app-icon',
     name: 'test-sui-app-name'
