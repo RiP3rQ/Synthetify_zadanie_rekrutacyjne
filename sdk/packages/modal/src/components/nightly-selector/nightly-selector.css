@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  animation: 1000ms ease-out 0s 1 fadeIn normal forwards;
+  animation: 500ms ease-out 0s 1 fadeIn normal forwards;
   z-index: 100;
   background-color: var(--nc-color-overlay);
   backdrop-filter: blur(10px);
@@ -19,6 +19,7 @@
   width: 720px;
   display: flex;
   flex-direction: column;
+  animation: 500ms ease-out 0s 1 viewsMoveUp normal forwards;
 }
 
 .nc_modalContent {
@@ -35,7 +36,7 @@
 }
 
 .nc_modalViewEntryTransition {
-  animation: 100ms ease-out 0s 1 viewsFadeIn normal forwards;
+  animation: 700ms ease-out 0s 1 viewsFadeIn normal forwards;
 }
 
 @media (max-width: 1080px) {
@@ -84,9 +85,11 @@
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    backdrop-filter: blur(0px);
   }
   100% {
     opacity: 1;
+    backdrop-filter: blur(10px);
   }
 }
 
@@ -142,10 +145,19 @@
 @keyframes viewsFadeIn {
   0% {
     opacity: 0;
-    transform: translateY(100%);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+  }
+}
+
+@keyframes viewsMoveUp {
+  0% {
+    transform: translateX(-50%) translateY(-30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 1;
   }
 }
