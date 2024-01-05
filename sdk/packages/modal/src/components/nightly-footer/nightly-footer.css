@@ -1,0 +1,25 @@
+/* TODO: Media Queries */
+/* DONE: Modal Footer */
+.nc_footerWrapper {
+  width: 100%;
+  height: 65px;
+  position: absolute;
+  bottom: -44px;
+  left: 0;
+  z-index: -1;
+  border-radius: 0px 0px 16px 16px;
+  background-color: var(--nc-color-elements-3);
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 16px 0px;
+}
+
+.nc_footerText {
+  font-size: var(--nc-font-size-3);
+  color: var(--nc-color-elements-6);
+}
+
+.nc_footerLink {
+  color: var(--nc-color-primary) !important;
+  text-decoration: underline !important;
+}
