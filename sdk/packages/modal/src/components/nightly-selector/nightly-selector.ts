@@ -309,9 +309,7 @@ export class NightlySelector extends LitElement {
           @click=${(e: MouseEvent) => {
             e.stopPropagation()
           }}
-          class="nc_modalWrapper ${this.fireClosingAnimation
-            ? 'nc_modalMobileSlideOutAnimation'
-            : ''}"
+          class="nc_modalWrapper ${this.fireClosingAnimation ? 'nc_modalWrapperSlideOut' : ''}"
         >
           <nightly-header .onClose=${this.handleClose}></nightly-header>
           <div

@@ -32,11 +32,15 @@
 }
 
 .nc_modalClosingAnimation {
-  animation: 100ms ease-out 0s 1 fadeOut normal forwards;
+  animation: 500ms ease-out 0s 1 fadeOut normal forwards;
 }
 
 .nc_modalViewEntryTransition {
-  animation: 700ms ease-out 0s 1 viewsFadeIn normal forwards;
+  animation: 500ms ease-out 0s 1 viewsFadeIn normal forwards;
+}
+
+.nc_modalWrapperSlideOut {
+  animation: 500ms ease-out 0s 1 viewsMoveDown normal forwards;
 }
 
 @media (max-width: 1080px) {
@@ -74,7 +78,7 @@
   }
 
   .nc_modalClosingAnimation {
-    animation: 250ms ease-out 0s 1 fadeOutMobile normal forwards;
+    animation: 500ms ease-out 0s 1 fadeOutMobile normal forwards;
   }
 
   .nc_modalMobileSlideOutAnimation {
@@ -96,9 +100,11 @@
 @keyframes fadeOut {
   0% {
     opacity: 1;
+    backdrop-filter: blur(10px);
   }
   100% {
     opacity: 0;
+    backdrop-filter: blur(0px);
   }
 }
 
@@ -159,5 +165,16 @@
   100% {
     transform: translateX(-50%) translateY(-50%);
     opacity: 1;
+  }
+}
+
+@keyframes viewsMoveDown {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-30%);
+    opacity: 0;
   }
 }

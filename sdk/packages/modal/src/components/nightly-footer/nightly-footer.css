@@ -19,6 +19,12 @@
   color: var(--nc-color-elements-6);
 }
 
+@media (max-width: 960px) {
+  .nc_footerText {
+    font-size: var(--nc-font-size-2);
+  }
+}
+
 .nc_footerLink {
   color: var(--nc-color-primary) !important;
   text-decoration: underline !important;
